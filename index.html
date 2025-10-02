@@ -640,7 +640,7 @@
             el('modal-botoes').style.display = 'none';
 
             const historicoFormatado = historico.slice(0, 10).reverse().map(item => `- Cota ${item.cota}/${item.mes}/${item.ano}: Valor Líquido R$ ${item.previsaoLiquida}`).join('\n');
-            const prompt = `Aja como um analista de dados financeiros especializado em finanças municipais. Analise os seguintes dados históricos de repasses líquidos do FPM para a prefeitura de Garanhuns:\n${historicoFormatado}\n\nCom base exclusivamente nesses dados, identifique a principal tendência (crescimento, queda ou estabilidade) dos valores líquidos. Forneça um resumo executivo de uma frase. Depois, apresente 2 ou 3 observações principais em formato de lista, usando "• " para cada ponto. Mantenha a análise curta, objetiva e focada nos dados fornecidos.`" Não fale de jeito nenhum sobre as deduções`;
+            const prompt = `Aja como um analista de dados financeiros especializado em finanças municipais. Analise os seguintes dados históricos de repasses líquidos do FPM para a prefeitura de Camocim de São Félix:\n${historicoFormatado}\n\nCom base exclusivamente nesses dados, identifique a principal tendência (crescimento, queda ou estabilidade) dos valores líquidos. Forneça um resumo executivo de uma frase. Depois, apresente 2 ou 3 observações principais em formato de lista, usando "• " para cada ponto. Mantenha a análise curta, objetiva e focada nos dados fornecidos.`" Não fale de jeito nenhum sobre as deduções`;
             
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${GEMINI_API_KEY}`;
             const payload = { contents: [{ parts: [{ text: prompt }] }] };
@@ -875,5 +875,6 @@
     </script>
 </body>
 </html>
+
 
 
