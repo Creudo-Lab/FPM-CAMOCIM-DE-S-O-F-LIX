@@ -179,7 +179,7 @@
             margin: 0 5px 0 15px;
         }
         .blue-section #resultadoMultiplicacao {
-            font-size: 2.5em;
+            font-size: 2.1em;
             font-weight: 900;
             color: #000000;
             background: none;
@@ -192,6 +192,13 @@
             border: 2px solid #000;
             background-color: #D9C6A5;
         }
+        .blue-section .valor-bruto-label {
+            display: block;
+            font-size: 1.2em;
+            font-weight: 700;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
         .blue-section #resultadoMultiplicacao:hover {
             transform: none;
         }
@@ -200,10 +207,12 @@
             padding: 15px;
             background: #000000;
             color: #D9C6A5;
-            font-weight: 700;
+            font-weight: 900;
             text-align: center;
-            font-size: 18px;
-            border: 2px solid #000;
+            font-size: 20px;
+            border: 3px solid #D9C6A5;
+            box-shadow: 6px 6px 0px #000000;
+            letter-spacing: 0.4px;
         }
         .chart-container {
             margin-top: 30px;
@@ -402,7 +411,7 @@
                     <span class="label">ANO</span>
                     <input id="cotaAno" class="edit" value="00">
                     <br><br>
-                    <span style="font-size:1.5em;font-weight:bold;font-family:'Roboto',sans-serif;">
+                    <span class="valor-bruto-label">
                         💰 VALOR BRUTO:
                     </span>
                     <span id="resultadoMultiplicacao">-</span>
